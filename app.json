@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "InEvent",
+    "slug": "InEvent",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/indexpage/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ios.inevent",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.780609459655-llrk15uu4pg39tvt9ml30b6nb9013ojq"
+        }
+      },
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to let you share photos with your friends.",
+        "NSPhotoLibraryUsageDescription": "This app accesses your photos to let you share them with your friends.",
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.780609459655-llrk15uu4pg39tvt9ml30b6nb9013ojq"
+            ]
+          }
+        ]
+      }
+    },
+    "android": {
+      "package": "com.compagny.inevents",
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/indexpage/icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      "@react-native-google-signin/google-signin"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

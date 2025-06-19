@@ -1,0 +1,76 @@
+import { Colors } from './colors';
+
+export const Theme = {
+  colors: {
+    primary: '#4361EE',
+    secondary: '#3F37C9',
+    accent: '#4CC9F0',
+    background: '#F8F9FA',
+    card: '#FFFFFF',
+    cardDark: '#F0F2F5',
+    border: '#E1E5EA',
+    text: '#1A1B25',
+    textSecondary: '#4F5565',
+    textLight: '#9CA3AF',
+    textDark: '#343A40',
+    success: '#10B981',
+    error: '#EF4444',
+    warning: '#F59E0B',
+    info: '#3B82F6',
+  },
+  spacing: {
+    xs: 4,
+    sm: 8,
+    md: 12,
+    lg: 16,
+    xl: 24,
+    xxl: 32,
+  },
+  borderRadius: {
+    sm: 4,
+    md: 8,
+    lg: 12,
+    xl: 16,
+    full: 9999,
+  },
+  typography: {
+    fontFamily: {
+      regular: 'System',
+      medium: 'System',
+      bold: 'System',
+      semibold: 'System',
+    },
+    fontSize: {
+      xs: 10,
+      sm: 12,
+      md: 14,
+      lg: 16,
+      xl: 18,
+      xxl: 20,
+      xxxl: 24,
+    },
+  },
+  shadows: {
+    sm: {
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 1 },
+      shadowOpacity: 0.18,
+      shadowRadius: 1.0,
+      elevation: 1,
+    },
+    md: {
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.23,
+      shadowRadius: 2.62,
+      elevation: 4,
+    },
+    lg: {
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.30,
+      shadowRadius: 4.65,
+      elevation: 8,
+    },
+  },
+};
